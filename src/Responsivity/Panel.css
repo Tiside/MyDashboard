@@ -1,0 +1,136 @@
+@media (min-width: 1500px) and (max-width: 1700px) {
+    .panel .categories ul li{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1310px) and (max-width: 1500px) {
+    .panel .categories ul li{
+        font-size: 12px;
+        column-gap: 6px;
+    }
+    .panel .categories h4{
+        font-size: 15px;
+    }
+    .panel .categories{
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 1420px) {
+
+    .panel .categories ul li #new-message{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1310px) {
+    .panel .categories{
+        padding-left: 0px;
+    }
+    .panel .categories h4{
+       display: none;
+    }
+    .panel .categories ul li{
+        justify-content: flex-start;
+        padding: 5px 0px;
+    }
+    .panel .categories ul li .text-panel{
+        display: none;
+    }
+    .panel{
+        width: 5%;
+    }
+    .content{
+        width: 95%;
+    }
+    .panel hr{
+        display: block;
+    }
+    .main{
+        width: 75%;
+       height: 520px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    .panel .categories{
+        padding-left: 0px;
+    }
+    .panel .categories h4{
+        font-size: 12px;
+    }
+    .panel .categories ul li{
+        justify-content: flex-start;
+        padding: 5px 0px;
+    }
+    .panel .categories ul li .text-panel{
+        display: none;
+    }
+    .panel{
+        width: 5%;
+    }
+    .content{
+        width: 95%;
+    }
+}
+
+@media (min-width: 435px) and (max-width: 800px) {
+    .panel .categories{
+        padding-left: 0px;
+    }
+    .panel .categories ul li{
+        justify-content: flex-start;
+        padding: 5px 0px;
+        margin: 0;
+    }
+    .panel .categories ul li .text-panel{
+        display: none;
+    }
+    .panel{
+        width: 10%;
+    }
+    .content{
+        width: 90%;
+    }
+    .main{
+        width: 75%;
+        
+    }
+}
+
+@media (min-width: 300px) and (max-width: 435px) {
+    .panel .categories{
+        padding-left: 0px;
+    }
+    .panel .categories ul li{
+        justify-content: flex-start;
+        padding: 5px 0px;
+        margin: 0;
+    }
+    .panel .categories ul li .text-panel{
+        display: none;
+    }
+    .panel{
+        width: 10%;
+    }
+    .content{
+        width: 90%;
+    }
+    .main{
+        width: 75%;
+        height: 550px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 1240px) {
+
+    .panel .categories h4{
+        display: none;
+    }
+    .panel hr{
+        display: block;
+    }
+
+}

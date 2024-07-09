@@ -1,0 +1,170 @@
+.gallery{
+    width: 100%;
+    padding-bottom: 100px;
+}
+.gallery .your-images{
+    width: 100%;
+}
+.gallery .your-images button {
+    border-radius: 15px;
+    padding: 7px 20px;
+    background-color: var(--cool-gray-color);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: var(--white);
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    position: relative;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    left: 42%;
+}
+.gallery .your-images{
+    position: relative;
+}
+
+.gallery .your-images button i {
+    opacity: 0;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    transform: translate(50%, -50%);
+    color: var(--white);
+    font-size: 20px;
+    transition: opacity 0.5s ease, top 0.5s ease;
+}
+
+.gallery .your-images button span {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: inline-block;
+}
+
+.gallery .your-images button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.gallery .your-images button:hover span {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.gallery .your-images button:hover i {
+    opacity: 1;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+.images-container-week,
+.images-container-month,
+.images-container-year{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    column-gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.gallery .your-images h4{
+    color: rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.3px; 
+}
+.gallery .your-images h3{
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.3px; 
+    
+}
+.gallery .your-images .image img{
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+.gallery .your-images .image{
+    width: 18%;
+    transition: 0.5s ease, box-shadow 0.8s ease;
+}
+
+.gallery .your-images .image:hover{
+    transform: translate(1px, -10px);
+    cursor: pointer;
+}
+.gallery .your-images .image .about-image{
+    width: auto;
+    height: auto;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: var(--cool-gray-color);
+    transition: 0.5s ease;
+}
+.gallery .your-images .image .about-image:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.gallery .your-images .image .about-image h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--white);
+    text-align: center;
+    border-bottom: 1px solid var(--gray);
+    font-size: auto;
+    letter-spacing: 0.2px;
+}
+.gallery .your-images .image .about-image p{
+    color: var(--white);
+    width: 80%;
+    margin-top: 2px;
+    padding: 2px 5px;
+}
+.gallery .your-images .image .about-image .date{
+    color: var(--gray);
+}
+
+@media (min-width: 1300px) and (max-width: 1920px) {
+    .gallery .your-images .image{
+        width: 30%;
+    }
+
+}
+@media (min-width: 800px) and (max-width: 1300px) {
+    .gallery .your-images .image{
+        width: 45%;
+    }
+    .gallery .your-images button {
+        left: 35%;
+        
+    }
+
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    .gallery .your-images .image{
+        width: 45%;
+    }
+    .gallery .your-images button {
+        left: 35%;
+        
+    }
+
+}
+@media (min-width: 300px) and (max-width: 700px) {
+    .gallery .your-images .image{
+        width: 100%;
+    }
+    .gallery .your-images h3{
+        margin-top: 60px
+        
+    }
+
+    .gallery .your-images button {
+        padding: 7px 30px;
+        left: 20%;
+        
+    }
+
+}

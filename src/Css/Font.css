@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.Fonts-content{
+    padding-bottom: 70px;
+}
+
+.Fonts-content h4{
+    color: rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.2px;
+}
+
+.Fonts-content .your-fonts{
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Fonts-content .your-fonts .font{
+    width: 45%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 4px 10px;
+    background-color: var(--cool-gray-color);
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.Fonts-content .your-fonts .font:nth-of-type(1){
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.Fonts-content .your-fonts .font:nth-of-type(2){
+    font-family: "Playwrite ES", cursive;
+    font-weight: 300;
+}
+.Fonts-content .your-fonts .font:nth-of-type(3){
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+}
+.Fonts-content .your-fonts .font:nth-of-type(4){
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.Fonts-content .your-fonts .font:hover{
+    cursor: pointer;
+    scale: 1.03;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Fonts-content .your-fonts .font hr{
+    background-color: var(--gray);
+    border: none;
+    height: 1px;
+    width: 90%;
+}
+
+.Fonts-content .your-fonts .font h4{
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.Fonts-content .your-fonts .font p{
+    color: var(--white);
+    width: 90%;
+}
+
+.Fonts-content .your-fonts .font .about-font{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5px;
+    padding: 10px 20px;
+}
+
+.Fonts-content .your-fonts .font .about-font button{
+    color: var(--white);
+    background-color: var(--more-blue);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 7px 20px;
+    transition: background-color 0.5s ease;
+}
+
+.Fonts-content .your-fonts .font .about-font button:hover{
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.Fonts-content .your-fonts .font .about-font i{
+   color: var(--gray);
+   font-size: 30px;
+   transition: 0.5s ease;
+}
+
+.Fonts-content .your-fonts .font .about-font i:hover{
+    color: var(--white);
+}
+
+.works-edit{
+    position: relative;
+}
+
+
+.works-edit ul{
+    background-color: #21242d;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0, 0.5);
+    transition: 2s ease;
+    overflow: hidden;
+}
+
+.works-edit p:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.works-edit ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 130px;
+    position: absolute;
+    right: -50px;
+    top: 20px; 
+    opacity: 0;
+    z-index: -1;
+    transition: top 0.5s ease, opacity 0.5s ease; /* Transition for top and opacity */
+}
+
+.works-edit ul.show {
+    top: 30px; /* End position */
+    opacity: 2; /* Fully visible */
+    z-index: 0;
+}
+.works-edit li:nth-of-type(2){
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    
+}
+.fonts-edit li:nth-of-type(1){
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.works-edit li:nth-of-type(3){
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.works-edit li:hover{
+    transition: 0.5s ease;
+}
+
+.works-edit li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.works-edit a{
+    text-decoration: none;
+    color: var(--silver);
+    font-size: 14px;
+}
+
+@media (min-width: 1000px) and (max-width: 1400px){
+    .Fonts-content .your-fonts .font{
+        width: 40%;
+    }
+}
+@media (min-width: 300px) and (max-width: 1000px){
+    .Fonts-content .your-fonts .font{
+        width: 100%;
+    }
+}
+
